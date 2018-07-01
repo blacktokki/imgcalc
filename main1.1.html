@@ -1,0 +1,37 @@
+<DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Image Carculator</title>
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="jquery-migrate-1.4.1.min.js"></script>
+		<script src="myann1.1.js"></script>
+		<script src="mycv.js"></script>
+		<script src="mainscript1.1.js"></script>
+		<style type="text/css">
+			canvas{border:black 1px solid;}
+			p{border:black 1px solid;width:320;}
+			#viewer{border:black 1px solid;width:640;}
+		</style>
+	</head>
+	<body>
+		<input id="loadButton" type="file" accept="image/*">
+		가로:<input id="inp_w" type="text">
+		세로:<input id="inp_h" type="text">
+		<button id="viewButton" >모니터링</button><br>
+		<input id="colors" type="color" value="#ffffff">
+		<button id="runButton">계산</button>
+		<button id="reset">리셋</button>
+		<input id="auto" type="checkbox">자동계산
+		<p id="str"></p>
+		<p id="strr"></p>
+		<canvas id="canvas4" width="640" height="28"></canvas><br><br>
+		<canvas id="canvas1" width="640" height="480"></canvas><br>
+		<div id="viewer">
+			<canvas id="canvas2" width="640" height="480"></canvas><br>
+			<canvas id="canvas3" width="28" height="28"></canvas>
+			<button id="weightButton" >Weight</button>
+			<a herf="#" id="links" download="" style="display:none">link</a>
+		</div>
+	</body>
+</html>
